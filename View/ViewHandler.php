@@ -245,6 +245,8 @@ class ViewHandler implements ConfigurableViewHandlerInterface
     /**
      * If the given format uses the templating system for rendering.
      *
+     * @deprecated since 2.8
+     *
      * @param string $format
      *
      * @return bool
@@ -277,6 +279,10 @@ class ViewHandler implements ConfigurableViewHandlerInterface
 
         if (null === $context->getSerializeNull() && null !== $this->serializeNullStrategy) {
             $context->setSerializeNull($this->serializeNullStrategy);
+        }
+
+        if (null !== $view->getStatusCode()) {
+            $context->setAttribute('status_code', $view->getStatusCode());
         }
 
         return $context;
@@ -350,6 +356,8 @@ class ViewHandler implements ConfigurableViewHandlerInterface
     /**
      * Renders the view data with the given template.
      *
+     * @deprecated since 2.8
+     *
      * @param View   $view
      * @param string $format
      *
@@ -380,6 +388,8 @@ class ViewHandler implements ConfigurableViewHandlerInterface
 
     /**
      * Prepares view data for use by templating engine.
+     *
+     * @deprecated since 2.8
      *
      * @param View $view
      *

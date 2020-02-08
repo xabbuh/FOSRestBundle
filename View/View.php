@@ -174,6 +174,8 @@ class View
     /**
      * Set template variable.
      *
+     * @deprecated since 2.8
+     *
      * @param array|callable $data
      *
      * @return View
@@ -247,6 +249,8 @@ class View
     /**
      * Sets template to use for the encoding.
      *
+     * @deprecated since 2.8
+     *
      * @param string|TemplateReferenceInterface $template
      *
      * @return View
@@ -266,6 +270,8 @@ class View
     /**
      * Sets template variable name to be used in templating formats.
      *
+     * @deprecated since 2.8
+     *
      * @param string $templateVar
      *
      * @return View
@@ -279,6 +285,8 @@ class View
 
     /**
      * Sets the engine.
+     *
+     * @deprecated since 2.8
      *
      * @param string $engine
      *
@@ -376,6 +384,8 @@ class View
     /**
      * Gets the template data.
      *
+     * @deprecated since 2.8
+     *
      * @return mixed|null
      */
     public function getTemplateData()
@@ -406,6 +416,8 @@ class View
     /**
      * Gets the template.
      *
+     * @deprecated since 2.8
+     *
      * @return TemplateReferenceInterface|string|null
      */
     public function getTemplate()
@@ -416,6 +428,8 @@ class View
     /**
      * Gets the template variable name.
      *
+     * @deprecated since 2.8
+     *
      * @return string|null
      */
     public function getTemplateVar()
@@ -425,6 +439,8 @@ class View
 
     /**
      * Gets the engine.
+     *
+     * @deprecated since 2.8
      *
      * @return string|null
      */
